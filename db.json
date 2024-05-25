@@ -1,0 +1,58 @@
+{
+  "produtos": [
+    {
+      "id": "d370",
+      "nome": "Monster vol 1",
+      "preco": "60",
+      "imagem": "https://m.media-amazon.com/images/I/815xJbtOVfL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "9511",
+      "nome": "Monster vol 2 ",
+      "preco": "60",
+      "imagem": "https://m.media-amazon.com/images/I/81+TuMyIL0L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "3780",
+      "nome": "Monster vol 3 ",
+      "preco": "60",
+      "imagem": "https://m.media-amazon.com/images/I/81kOOyNifwL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "36b3",
+      "nome": "Monster vol 4",
+      "preco": "60",
+      "imagem": "https://m.media-amazon.com/images/I/81G1Pl4nKYL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "9e3d",
+      "nome": "Monster vol 5",
+      "preco": "60",
+      "imagem": "https://m.media-amazon.com/images/I/81tArc8PxGL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "8eaf",
+      "nome": "Monster vol 6",
+      "preco": "60",
+      "imagem": "https://m.media-amazon.com/images/I/81eZigMo8xL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "9c69",
+      "nome": "Monster vol 7",
+      "preco": "60",
+      "imagem": "https://m.media-amazon.com/images/I/8169HcwIg8L._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": "269a",
+      "nome": "Monster vol 8",
+      "preco": "60",
+      "imagem": "https://m.media-amazon.com/images/I/91d7uvUhgkL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "41be",
+      "nome": "Monster vol 9",
+      "preco": "60",
+      "imagem": "https://m.media-amazon.com/images/I/81PetdldbuL._AC_UF1000,1000_QL80_.jpg"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css"> 
+    
+
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho__container">
+            <img src="assets/logo-cabecalho.png" alt="corações" class="cabecalho__imagem">
+            <h1 class="cabecalho__titulo">AluraGeek</h1>
+        </div>
+    </header>
+
+    <main class="main__container">
+        <section class="produtos__container" >
+            <h1 class="produtos__titulo">MEUS PRODUTOS:</h1>
+            <div class="card__container" data-produtos>
+                
+            </div>
+        </section>
+
+        <section class="adicionarProdutos__container">
+            <h1 class="adicionarProdutos__titulo">ADICIONAR PRODUTO:</h1>
+            <form class="formulario" data-formulario>
+                <input class="formulario__campo" type="text" placeholder="Nome..." required data-nome>
+                <input class="formulario__campo" type="text" placeholder="Valor..." required data-valor>
+                <input class="formulario__campo" type="url" placeholder="Imagem..." required data-imagem>
+
+                <div class="botoes__container">
+                    <button class="botao__adicionar" type="submit">Enviar</button>
+                    <button class="botao__cancelar" type="reset">Limpar</button>
+                </div>
+            </form>
+            
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__container">
+            <img src="assets/logo-footer.png" alt="logo">
+            <div class="rodape__texto">
+                <p class="rodape__paragrafo">Desenvolvido por Luis Henrique</p>
+                <p class="rodape__data">ALURA LATAM - 2024</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="module" src="./js/mostrarProdutos.js"></script>
+    <script type="module" src="./js/criarProduto.js"></script>
+
+</body>
+</html>

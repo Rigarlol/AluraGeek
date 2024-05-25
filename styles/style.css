@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,400;0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+
+:root {
+    --font-geek: "Press Start 2P", system-ui;
+    --font-cards: "IBM Plex Mono", monospace;
+
+    --cor-principal: #5d04d9; 
+    --cor-botoes: #03318C;
+    --cor-preco: #e5e5e5;   
+}
+
+.cabecalho__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-principal);
+    color: var(--cor-preco);
+    font-family: var(--font-geek);
+    padding: 20px 0px;
+}
+
+.cabecalho__titulo {
+    font-size: 24px;   
+}
+
+.main__container {
+    margin: 50px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+} 
+
+.produtos__container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 40px;
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.produtos__titulo {
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+    padding: 40px 0px;
+    font-family: var(--font-geek);
+    font-size: 1.5rem;
+}
+
+.card__container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 75%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--cor-principal);
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: var(--cor-preco);
+    font-family: var(--font-cards);
+    max-width: 196px;
+}
+
+.produto__imagem {
+    width: 170px;
+    height: 174px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.font-descricao {
+    font-size: 15px;
+}
+
+.font-preco {
+    font-weight: bold;
+}
+
+.card__container__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__container__valor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*FORMULARIO*/
+
+.adicionarProdutos__container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.adicionarProdutos__titulo {
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+    padding: 40px 0px;
+    font-family: var(--font-geek);
+    font-size: 1.5rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.formulario__campo {
+    border: 2px solid var(--cor-botoes);
+    border-radius: 10px;
+    padding: 20px;
+    width: 20vw;
+    font-family: var(--font-cards);
+    color: var(--cor-botoes);
+    
+}
+
+.botoes__container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-family: var(--font-cards);
+    
+}
+
+.botao__adicionar {
+    width: 100%;
+    max-width: 188px;
+    height: 55px;
+    border: 2px solid var(--cor-botoes);
+    border-radius: 10px;
+    background-color: var(--cor-botoes);
+    color: var(--cor-preco);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.botao__cancelar {
+    width: 100%;
+    max-width: 188px;
+    height: 55px;
+    border: 2px solid var(--cor-botoes);
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    font-family: var(--font-cards);
+    color: var(--cor-botoes);
+    font-weight: bold;
+}
+
+/*FOOTER*/
+
+
+.rodape__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-principal);
+    padding: 64px;
+}
+
+.rodape__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape__paragrafo {
+    font-family: var(--font-cards);
+    line-height: 16px;
+    color: var(--cor-preco);
+}
+
+.rodape__data {
+    font-family: var(--font-cards);
+    margin: auto;
+    color: var(--cor-preco);
+    font-weight: 200;
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width: 768px) {
+    .cabecalho__container {
+        padding: 10px 0px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.3rem;   
+    }
+
+    .main__container {
+        margin: 20px 10px;
+        flex-direction: column-reverse;
+        align-items: center;
+    } 
+
+    .produtos__container {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .produtos__titulo {
+        max-width: 100%;
+        padding: 0px 0px 30px 0px;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .adicionarProdutos__titulo {
+        padding: 20px 0px;
+        font-size: 1.8rem;
+        text-align: center;
+        
+    }
+
+    .card__container {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 100%;
+        overflow-x: auto;
+        box-shadow: -8px 9px 18px 5px #0000004f;
+        border-radius: 10px;
+    }
+
+    .card {
+        padding: 8px;
+        font-size: 14px;
+        
+    }
+
+    .formulario {
+        align-items: center;
+        width: 100%;
+    }
+
+    .font-descricao {
+        font-size: 13px;
+    }
+
+    .formulario__campo {
+        width: 150%;
+    }
+
+    .botao__adicionar, .botao__cancelar {
+        width: 145px;
+        height: 50px;
+    }
+
+    .rodape__container {
+        padding: 30px;
+    }
+
+    .rodape__texto {
+        gap: 5px;
+    }
+
+    .rodape__paragrafo {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .rodape__data {
+        font-size: 14px;
+    }
+}
